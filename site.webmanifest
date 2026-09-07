@@ -1,7 +1,7 @@
 {
   "name": "HTMLVerse",
   "short_name": "HTMLVerse",
-  "description": "A free and open-source Arabic learning platform for HTML.",
+  "description": "منصة مجانية ومفتوحة المصدر لتعلم HTML باللغة العربية.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
