@@ -4,36 +4,43 @@
   box-sizing: border-box;
 }
 
+ul, ol, blockquote {
+  margin-block: 1em;
+  padding-inline-start: 40px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-
   font-family: "Noto Kufi Arabic", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #3d8bff;
-  /* background:linear-gradient(180deg,#071023 0%, #07162a 100%); */
-  /* color: #e6eef6; */
+  font-size: x-large;
   font-weight: 500;
-
 }
 
+
+/* START HEADER */
 header {
   display: flex;
   justify-content: space-around;
-  background-color: white;
 }
 
 .open-source {
   display: flex;
   align-items: center;
-  padding-right: 20px;
+  padding: 2px 10px;
 }
 
 .open-source a {
   color: #3d8bff;
+  text-decoration: none;
+}
+
+.open-source a:hover {
+  color: blue;
   text-decoration: none;
 }
 
@@ -45,21 +52,22 @@ header {
 #logo {
   height: 150px;
   width: auto;
+  padding: 2px;
 }
+/* ENDS HEADER */
 
-
-nav {
-  border-top:#e6eef6  1px solid;
-  border-bottom: #e6eef6 1px solid;
-  /* background-color: #9aa6b2; */
+/* START NAVBAR */
+.navbar {
   background-color: whitesmoke;
- 
+  padding: 5px;
+  
 }
 
 
 .nav-links {
-  margin:5px 0;
   list-style: none;
+  margin:5px 0;
+  color: whitesmoke;
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -69,71 +77,135 @@ nav {
   padding-right: 10px;
 }
 
+
+
 .nav-links a {
   text-decoration: none;
-  color:blue;
+  color:#3d8bff;
   font-weight: bold;
   transition: color 0.3s;
-  font-size: 1.5rem;
+  font-size: xx-large;
 }
 
 .nav-links a:hover {
-  color: #3d8bff;
+  color: blue;
 }
+/* ENDS NAVBAR */
 
+
+
+/* START MAIN */
 main {
-  padding: 20px;
+  padding: 0px 20px;
   min-height: 80vh;
   display: block;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 10px auto; /* centers horizontally */
+  
 }
 
-
-
-main a {
-  color: #7c3aed;
+main h1 {
+  text-align: center;
+  margin: 100px 0px;
 }
 
 .blur-box {
-  border:blue 2px double;
-  background-color: whitesmoke;
-  /* background: #0b1220; */
-   /* semi-transparent background */
-  box-shadow: 0 1px 2px white;
+  border: blue  2px solid;
+  background: whitesmoke; /* semi-transparent background */
+  box-shadow: 0 1px 2px #3d8bff;
   border-radius: 12px;
   padding: 20px;
 }
 
+.blur-box h2 {
+  padding: 1rem auto;
+}
+
+.blur-box ul {
+  list-style: none;
+}
+
+.blur-box ul li {
+  padding: 10px;
+}
+/* ENDS MAIN */
+
+
+/* START FOOTER */
 footer {
   text-align: center;
-  border-top:white  2px solid;
-  padding: 2px;
+  border-top:#3d8bff  2px solid;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 50px;
+  font-size: medium;
 }
 
 footer .support {
-  font-size: xx-small;
   font-weight: bold;
-  margin-bottom: 2px;
 }
 
-footer .support a{
-  /* color: black;
-  text-decoration: none;
-  background: linear-gradient(180deg, #7b2a9f, #fdd82e);
-  border-radius: 4px;
-  padding: 0px; */
-  
+footer .support a{  
   color: white;
   text-decoration: none;
-  background: linear-gradient(180deg, blue, darkblue);
+  background: linear-gradient(180deg, #3d8bff, darkblue);
   border-radius: 4px;
-  padding: 1px;
-  border: black solid 1px;
-  
+  padding: 2px;
+  font-size: small;
+}
+/* ENDS FOOTER */
+
+
+
+
+
+/* Responsive: for tablets and below (≤ 768px) */
+/* متجاوب: للأجهزة اللوحية وما دونها (≤ 768px) */
+
+@media (max-width: 768px) {
+  body {
+    font-size: large;
+  }
+
+  header #logo {
+    height: 100px;
+  }
+
+  .open-source {
+  font-size: medium;
+  }
+
+  main h1 {
+    margin: 75px auto;
+  }
+
+  .blur-box h2 {
+  padding: 1rem 0.5rem;
+  }
+
+  .nav-links a {
+  font-size: x-large;
+  }
+
+  footer {
+  font-size: small;
+  }
+
+  footer .support a{  
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(180deg, #3d8bff, darkblue);
+    border-radius: 4px;
+    padding: 2px;
+    font-size: x-small;
+  }
+
 }
 
 
-.mr {
-  margin-right: 30px;
+/* Responsive: for phones (≤ 480px) */
+/* متجاوب: للهواتف (≤ 480px) */
+
+@media (max-width: 480px) {
+ 
 }
