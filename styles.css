@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
-ul, ol, blockquote {
+ul, ol {
+  margin-block: 1em;
+  padding-inline-start: 15px;
+}
+
+blockquote {
   margin-block: 1em;
   padding-inline-start: 40px;
 }
